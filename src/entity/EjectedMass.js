@@ -25,7 +25,9 @@ EjectedMass.prototype.onRemove = function(gameServer) {
 
 EjectedMass.prototype.onConsume = function(consumer,gameServer) {
     // Adds mass to consumer
-    consumer.addMass(gameServer.config.ejectMassGain);
+	consumer.owner.setAngle(this.angle)
+	consumer.owner.setMoveEngineData(160, 20);
+  //  consumer.addMass(gameServer.config.ejectMassGain);
 }
 
 EjectedMass.prototype.moveDone = function(gameServer) {
