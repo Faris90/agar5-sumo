@@ -4,7 +4,7 @@
   "description": "Open source Agar.io server",
   "main": "index.js",
   "dependencies": {
-    "ws": "^0.7.2",
+    "ws": "^7.2.0",
     "finalhandler": "^0.3.6",
     "serve-static": "^1.9.3"
   },
